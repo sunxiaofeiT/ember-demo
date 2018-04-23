@@ -1,0 +1,41 @@
+<div class="layui-main">
+  {{#list-all-person filter=(action 'filterByName') as |filteredResults|}}
+  <div class="right-box">
+    <div class="person-table">
+      <div class="table-title person-table-row-normal person-table-row-first">
+        Name
+      </div>
+      <div class="table-titel person-table-row-normal person-table-row-second">
+        Gender
+      </div>
+      <div class="table-title person-table-row-normal person-table-row-third">
+        Age
+      </div>
+      <div class="table-title person-table-row-normal person-table-row-forth">
+        Date
+      </div>
+      <div class="table-title person-table-row-normal person-table-row-fifth">
+        Grade
+      </div>
+      <div class="table-title person-table-row-normal person-table-row-sixth">
+        Major
+      </div>
+      <div class="table-row">
+        {{#each filteredResults as |rentalUnit|}} {{ person-listing person=rentalUnit }} {{/each}}
+      </div>
+    </div>
+    <div class="div1">
+    </div>
+  </div>
+
+  <div class="left-box">
+    <input class="layui-input add-item add-person-name" placeholder="Input Name">
+    <input class="layui-input add-item add-person-gender" placeholder="Input Gender">
+    <input class="layui-input add-item add-person-age" placeholder="Input Age">
+    <input class="layui-input add-item add-person-date" placeholder="Input Date">
+    <input class="layui-input add-item add-person-grade" placeholder="Input grade">
+    <input class="layui-input add-item add-person-major" placeholder="Input major">
+    <button class="layui-btn layui-btn-normal add-a-person add-submit-button">Add A Person</button>
+  </div>
+  {{/list-all-person}}
+</div>

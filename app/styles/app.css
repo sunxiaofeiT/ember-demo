@@ -1,0 +1,133 @@
+.index-box {
+    height: 20em;
+    font: center;
+    border-top: 5px solid black;
+}
+
+/* CSS for index route */
+.index-route-button {
+    width: 100%;
+    height: auto;
+    padding-top: 2em;
+    border-radius: 5px;
+}
+
+
+/* CSS for about route */
+#about-h1 {
+    padding-top: 4em;
+    font: center;
+}
+
+/* CSS for the each routes the right box for show the table */
+.right-box {
+    float: left;
+    width: 70%;
+    height: auto;
+    margin-top: 2em;
+}
+
+/* the left box in each route */
+.left-box {
+    float: left;
+    width: 20%;
+    height: auto ;
+    margin-left: 5%;
+}
+
+/* CSS for search input in each routes */
+.search-box {
+    width: 100%;
+}
+.search-input {
+    width: 50%;
+    /* border: 1px solid #1E9FFF; */
+    border-radius: 5px;
+    margin-left: 25%;
+}
+
+/* input box for all add person/acti/device */
+
+.add-submit-button {
+    width: 100%;
+    margin-top: 2em;
+    border-radius: 5px;
+}
+.add-item {
+    margin-top: 2em;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* device table */
+.table-title .table-row {
+    height: 4em;
+    border: 1px solid #1E9FFF;
+}
+.table-row-first {
+    float: left;
+    width: 15%;
+    height: 3em;
+    line-height: 3em;
+    border: 1px solid #1E9FFF;
+    text-align: center;
+}
+.table-row-second {
+    float: left;
+    width: 15%;
+    height: 3em;
+    line-height: 3em;
+    border-top: 1px solid #1E9FFF;
+    border-bottom: 1px solid #1E9FFF;
+    text-align: center;
+}
+.table-row-third {
+    float: left;
+    width: 15%;
+    height: 3em;
+    line-height: 3em;
+    border-top: 1px solid #1E9FFF;
+    border-left: 1px solid #1E9FFF;
+    border-bottom: 1px solid #1E9EFF;
+    text-align: center;
+}
+.table-row-forth {
+    float: left;
+    width: 50%;
+    height: 3em;
+    line-height: 3em;
+    border: 1px solid #1E9FFF;
+    text-align: center;
+}
+
+/* preson table */
+/* normal table */
+.person-table-row-normal {
+    float: left;
+    height: 3em;
+    line-height: 3em;
+    border: 1px solid #1E9FFF;
+    text-align: center;
+}
+.person-table-row-first,.person-table-row-second,.person-table-row-third,.person-table-row-forth,.person-table-row-fifth  {
+    width: 15%;
+}
+.person-table-row-sixth {
+    width: 20%;
+} 
+
+/* activity table */
+.activity-row-normal {
+    float: left;
+    height: 3em;
+    line-height: 3em;
+    border: 1px solid #1E9FFF;
+    text-align: center;
+}
+.activity-row-first,.activity-row-second,
+.activity-row-third, .activity-row-forth {
+    width: 15%;
+}
+.activity-row-fifth {
+    width: 30%;
+}

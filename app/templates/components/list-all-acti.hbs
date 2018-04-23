@@ -1,0 +1,11 @@
+<br />
+<div class="search-box">
+        <div class='search-input'>
+        {{input value=value class="layui-input"
+                key-up=(action 'InputAction')
+                placeholder='Search Activities By Name'}}
+        </div>
+        <br />
+</div>
+
+{{yield results}}

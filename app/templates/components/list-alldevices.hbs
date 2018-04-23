@@ -1,0 +1,10 @@
+<br />
+<div class="search-box">
+        <div class="search-input">
+        {{input class="layui-input" value=value
+                key-up=(action 'handleFilterEntry')
+                placeholder="Seach Devices By Name"}}
+        </div>
+        <br />
+</div>
+{{yield results}}

@@ -1,0 +1,32 @@
+<div class="layui-main">
+  {{#list-alldevices filter=(action 'filterByName') as |filteredResults|}}
+  <div class="right-box">
+    <div class="table-title-row">
+      <div class="table-title table-row-first">
+        Name
+      </div>
+      <div class="table-title table-row-second">
+        Date
+      </div>
+      <div class="table-title table-row-third">
+        Number used
+      </div>
+      <div class="table-title table-row-forth">
+        Note
+      </div>
+    </div>
+
+    <div class="table-row">
+      {{#each filteredResults as |rentalUnit|}} {{ device-listing rental=rentalUnit }} {{/each}}
+    </div>
+  </div>
+
+  <div class="left-box">
+    <input class="layui-input add-item add-device-name" placeholder="Input Device's Name">
+    <input class="layui-input add-item add-device-date" placeholder="Input Device's Date">
+    <input class="layui-input add-item add-device-num" placeholder="Input Device's used counts">
+    <input class="layui-input add-item add-device-note" placeholder="Input The Note">
+    <button class="layui-btn layui-btn-normal add-a-device add-submit-button">Add A Device</button>
+  </div>
+  {{/list-alldevices}}
+</div>

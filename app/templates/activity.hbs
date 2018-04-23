@@ -1,0 +1,39 @@
+<div class='layui-main'>
+    {{#list-all-acti filter=(action 'searchByName') as |filterResults|}}
+    <div class="right-box">
+        <div class="activity-table">
+            <div class="activity-table-title">
+                <div class="activity-row-normal activity-row-first">
+                    Name
+                </div>
+                <div class="activity-row-normal activity-row-second">
+                    Date
+                </div>
+                <div class="activity-row-normal activity-row-third">
+                    People
+                </div>
+                <div class="activity-row-normal activity-row-forth">
+                    Classfication
+                </div>
+                <div class="activity-row-normal activity-row-fifth">
+                    Note
+                </div>
+            </div>
+        </div>
+        <div>
+            {{#each filterResults as |rentalUnit|}}
+             {{acti-listing acti=rentalUnit }} 
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="left-box">
+        <input class="layui-input add-item add-acti-name" placeholder="Input This Activity's Name">
+        <input class="layui-input add-item add-acti-date" placeholder="Input This Activity's Date">
+        <input class="layui-input add-item add-acti-class" placeholder="Input This Activity's classfication">
+        <input class="layui-input add-item add-acti-people" placeholder="Input People Who Took Party In This Activity">
+        <input class="layui-input add-item add-acti-note" placeholder="Input The Note About This Activity">
+        <button class="layui-btn layui-btn-normal add-a-acti add-submit-button">Add A Device</button>
+    </div>
+    {{/list-all-acti}}
+</div>
